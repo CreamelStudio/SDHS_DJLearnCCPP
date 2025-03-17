@@ -1,9 +1,13 @@
-#include <stdio.h>
 //Date : 2025-03-17
 //Update : 2025-03-17
 //Aythor : Creamel
 //email : lhs739300@gmail.com
 //Decs : typedef Practice
+
+#include <stdio.h>
+
+#include "Test.h"
+#pragma comment(lib, "Test.lib")
 
 typedef int wjdtn;
 typedef float tlftn;
