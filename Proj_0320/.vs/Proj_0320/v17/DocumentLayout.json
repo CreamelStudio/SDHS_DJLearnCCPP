@@ -1,12 +1,104 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80F888CC-6136-4003-8889-891EB5AAE532}|2025-03-24-1\\2025-03-24-1.vcxproj|C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-24-1\\Resource.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0085 2$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{80F888CC-6136-4003-8889-891EB5AAE532}|2025-03-24-1\\2025-03-24-1.vcxproj|solutionrelative:2025-03-24-1\\Resource.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0085 2$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F888CC-6136-4003-8889-891EB5AAE532}|2025-03-24-1\\2025-03-24-1.vcxproj|C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-24-1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{80F888CC-6136-4003-8889-891EB5AAE532}|2025-03-24-1\\2025-03-24-1.vcxproj|solutionrelative:2025-03-24-1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B7B80C9-F768-401F-9F98-BEC9A30BABDF}|2025-03-20-3\\2025-03-20-3.vcxproj|C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-20-3\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7B7B80C9-F768-401F-9F98-BEC9A30BABDF}|2025-03-20-3\\2025-03-20-3.vcxproj|solutionrelative:2025-03-20-3\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488C8781-FC98-4F33-A82A-89F24AD2B3B8}|2025-03-20-2\\2025-03-20-2.vcxproj|C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-20-2\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{488C8781-FC98-4F33-A82A-89F24AD2B3B8}|2025-03-20-2\\2025-03-20-2.vcxproj|solutionrelative:2025-03-20-2\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF6A101-17D8-43BA-8B0E-90D2B11E101E}|2025-03-20-1\\2025-03-20-1.vcxproj|C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-20-1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9EF6A101-17D8-43BA-8B0E-90D2B11E101E}|2025-03-20-1\\2025-03-20-1.vcxproj|solutionrelative:2025-03-20-1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Resource.rc - IDD_DIALOG1 - Dialog",
+              "DocumentMoniker": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-24-1\\Resource.rc",
+              "RelativeDocumentMoniker": "2025-03-24-1\\Resource.rc",
+              "ToolTip": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-24-1\\Resource.rc - IDD_DIALOG1 - Dialog*",
+              "RelativeToolTip": "2025-03-24-1\\Resource.rc - IDD_DIALOG1 - Dialog*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-24T00:49:12.198Z",
+              "EditorCaption": " - IDD_DIALOG1 - Dialog"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-24-1\\main.cpp",
+              "RelativeDocumentMoniker": "2025-03-24-1\\main.cpp",
+              "ToolTip": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-24-1\\main.cpp",
+              "RelativeToolTip": "2025-03-24-1\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-23T23:52:51.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-20-3\\main.cpp",
+              "RelativeDocumentMoniker": "2025-03-20-3\\main.cpp",
+              "ToolTip": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-20-3\\main.cpp",
+              "RelativeToolTip": "2025-03-20-3\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-20T00:58:53.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-20-2\\main.cpp",
+              "RelativeDocumentMoniker": "2025-03-20-2\\main.cpp",
+              "ToolTip": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-20-2\\main.cpp",
+              "RelativeToolTip": "2025-03-20-2\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-20T00:43:27.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-20-1\\main.cpp",
+              "RelativeDocumentMoniker": "2025-03-20-1\\main.cpp",
+              "ToolTip": "C:\\Users\\creamel\\Documents\\GitHub\\SDHS_DJLearnCCPP\\Proj_0320\\2025-03-20-1\\main.cpp",
+              "RelativeToolTip": "2025-03-20-1\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-19T23:58:06.412Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
