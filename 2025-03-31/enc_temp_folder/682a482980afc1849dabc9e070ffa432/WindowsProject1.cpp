@@ -161,10 +161,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         }
         break;
     case WM_KEYDOWN:
-        if (wParam == VK_LEFT) x -= 10;
-        if (wParam == VK_RIGHT) x += 10;
-        if (wParam == VK_UP) y += 10;
-        if (wParam == VK_DOWN) y -= 10;
+        if (wParam == VK_LEFT) x += 10;
+        if (wParam == VK_RIGHT) x -= 10;
         InvalidateRect(hWnd, NULL, TRUE);
         break;
     case IDM_EXIT:
