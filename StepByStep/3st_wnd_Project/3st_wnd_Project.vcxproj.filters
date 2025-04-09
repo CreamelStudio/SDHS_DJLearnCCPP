@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Proc">
+      <UniqueIdentifier>{f052ba39-3f16-4ae0-8c07-e47aac948bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainSystem">
+      <UniqueIdentifier>{471e08e7-84da-4e98-aeae-dcf2855155e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PreCompiledHeader">
+      <UniqueIdentifier>{1feea306-6d7d-45cc-883e-ea9bc4605097}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="3st_wnd_Project.h">
+      <Filter>MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>PreCompiledHeader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="3st_wnd_Project.cpp">
+      <Filter>MainSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>PreCompiledHeader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="3st_wnd_Project.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="3st_wnd_Project.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
