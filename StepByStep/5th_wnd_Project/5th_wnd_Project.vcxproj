@@ -195,13 +195,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="5th_wnd_Project.h" />
+    <ClInclude Include="AboutProc.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="MainProc.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="5th_wnd_Project.cpp" />
+    <ClCompile Include="AboutProc.cpp" />
+    <ClCompile Include="MainProc.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>

@@ -36,6 +36,12 @@
     <ClInclude Include="5th_wnd_Project.h">
       <Filter>MainWindowSystem</Filter>
     </ClInclude>
+    <ClInclude Include="AboutProc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -43,6 +49,12 @@
     </ClCompile>
     <ClCompile Include="5th_wnd_Project.cpp">
       <Filter>MainWindowSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutProc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProc.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
