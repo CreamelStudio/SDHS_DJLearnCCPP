@@ -4,7 +4,7 @@
 //=============================================
 // Desc : windois GDI 선을 그리는 함수
 // Parameter : HDC, 시작점(x1,y1),끝점(x2,y2)
-// Author :Hyunwoo Lee (eamill :sdh240212@sdh.hs.kr)
+// Author :JungHwan_Kim (eamill :sdh240204@sdh.hs.kr)
 // Date : 2025-04-14
 int GdiLine(HDC hdc, int x1,int y1,int x2,int y2)
 {
@@ -17,7 +17,7 @@ int GdiLine(HDC hdc, int x1,int y1,int x2,int y2)
 //=============================================
 // Desc : windois GDI 별을 그리는 함수
 // Parameter : HDC, 좌표(mx,my),크기(scale)
-// Author :Hyunwoo Lee (eamill :sdh240212@sdh.hs.kr)
+// Author :JungHwan_Kim (eamill :sdh240204@sdh.hs.kr)
 // Date : 2025-04-14
 
 void gdiStar(HDC hdc, int mx, int my,int scale)
