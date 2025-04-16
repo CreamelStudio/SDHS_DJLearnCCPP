@@ -77,7 +77,7 @@ int OnPaint(HWND hWnd, WPARAM wParam, LPARAM lParam)
 	GdiLine(hdc, 350, 70, 370, 70);
 
 	// ¼ýÀÚ 9
-	GdiLine(hdc, 390, 90, 390, 70);
+	GdiLine(hdc, 410, 90, 410, 70);
 	GdiLine(hdc, 390, 70, 410, 70);
 	GdiLine(hdc, 410, 70, 410, 50);
 	GdiLine(hdc, 410, 50, 390, 50);
