@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0429eea4-3d82-47ca-a312-99d56a0552b6}</ProjectGuid>
-    <RootNamespace>WPLineOutput</RootNamespace>
+    <ProjectGuid>{aee9c6fc-c67b-4001-a5fa-bcacc78995da}</ProjectGuid>
+    <RootNamespace>WPClock01</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>01.WP_LineOutput</ProjectName>
+    <ProjectName>03.WP_Clock01</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -143,7 +143,7 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="WP_LineOutput.h" />
+    <ClInclude Include="WP_Clock01.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AboutProc.cpp" />
@@ -155,14 +155,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="WP_LineOutput.cpp" />
+    <ClCompile Include="WP_Clock01.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="WP_LineOutput.rc" />
+    <ResourceCompile Include="WP_Clock01.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="small.ico" />
-    <Image Include="WP_LineOutput.ico" />
+    <Image Include="WP_Clock01.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

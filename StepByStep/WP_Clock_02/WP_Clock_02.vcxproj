@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5c000e67-e050-4d3e-8693-b820e8aca367}</ProjectGuid>
-    <RootNamespace>WPPixelOutput</RootNamespace>
+    <ProjectGuid>{d4112828-d858-4109-8352-3b6ef61c36ed}</ProjectGuid>
+    <RootNamespace>WPClock02</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>01.WP_PixelOutput</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -138,14 +137,16 @@
   <ItemGroup>
     <ClInclude Include="AboutProc.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="gdiUtil.h" />
     <ClInclude Include="MainProc.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="WP_PixelOutput.h" />
+    <ClInclude Include="WP_Clock_02.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AboutProc.cpp" />
+    <ClCompile Include="gdiUtil.cpp" />
     <ClCompile Include="MainProc.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -153,14 +154,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="WP_PixelOutput.cpp" />
+    <ClCompile Include="WP_Clock_02.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="WP_PixelOutput.rc" />
+    <ResourceCompile Include="WP_Clock_02.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="small.ico" />
-    <Image Include="WP_PixelOutput.ico" />
+    <Image Include="WP_Clock_02.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
