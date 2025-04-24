@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d4112828-d858-4109-8352-3b6ef61c36ed}</ProjectGuid>
-    <RootNamespace>WPClock02</RootNamespace>
+    <ProjectGuid>{c50f8072-e9ca-487d-9554-de42c72f6608}</ProjectGuid>
+    <RootNamespace>WPSinCos</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>04.WP_Clock02</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -143,7 +142,7 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="WP_Clock_02.h" />
+    <ClInclude Include="WP_SinCos.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AboutProc.cpp" />
@@ -155,14 +154,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="WP_Clock_02.cpp" />
+    <ClCompile Include="WP_SinCos.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="WP_Clock_02.rc" />
+    <ResourceCompile Include="WP_SinCos.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="small.ico" />
-    <Image Include="WP_Clock_02.ico" />
+    <Image Include="WP_SinCos.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
