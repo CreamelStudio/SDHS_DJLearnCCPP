@@ -71,8 +71,7 @@ int OnCommand(HWND hWnd, WPARAM wParam, LPARAM lParam)
     return 0;
 }
 
-#define PI 3.141592f
-#define RAD(x) PI/180.0f*(x)
+
 
 int OnPaint(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
