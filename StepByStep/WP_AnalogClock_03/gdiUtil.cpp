@@ -11,8 +11,8 @@
 // Date : 2025-04-14  
 void gdiLine(HDC hdc, int x1, int y1, int x2, int y2)
 {
-	MoveToEx(hdc, x1, y1, NULL);
-	LineTo(hdc, x2, y2);
+    MoveToEx(hdc, x1, y1, NULL);
+    LineTo(hdc, x2, y2);
 }
 
 //==========================================
@@ -22,34 +22,34 @@ void gdiLine(HDC hdc, int x1, int y1, int x2, int y2)
 // Date : 2025-04-14     
 void gdiStar(HDC hdc, int mx, int my, int scale)
 {
-	MoveToEx(hdc, mx + 0 * scale, my + -10 * scale, NULL);
-	LineTo(hdc, mx + 6 * scale, my + 8 * scale);
-	LineTo(hdc, mx + -10 * scale, my + -3 * scale);
-	LineTo(hdc, mx + 10 * scale, my + -3 * scale);
-	LineTo(hdc, mx + -6 * scale, my + 8 * scale);
-	LineTo(hdc, mx + 0 * scale, my + -10 * scale);
+    MoveToEx(hdc,   mx + 0 * scale,     my + -10 * scale, NULL);
+    LineTo(hdc,     mx + 6 * scale,     my + 8 * scale);
+    LineTo(hdc,     mx + -10 * scale,   my + -3 * scale);
+    LineTo(hdc,     mx + 10 * scale,    my + -3 * scale);
+    LineTo(hdc,     mx + -6 * scale,    my + 8 * scale);
+    LineTo(hdc,     mx + 0 * scale,     my + -10 * scale);
 }
 
 void CBS_Num1(HDC hdc, int cx, int cy, int length) {
 	for (int i = 0, j = 0; i < 360; i += 30, j++) {
-		float fTheta = RAD((float)((i - 135.f)));
+        float fTheta = RAD((float)((i - 135.f)));
 		int x = (int)(cos(fTheta) * length) - (sin(fTheta) * length);
 		int y = (int)(sin(fTheta) * length) + (cos(fTheta) * length);
-		TCHAR strTemp[3] = L"";
-		wsprintf(strTemp, L"%2d", j == 0 ? 12 : j);
+        TCHAR strTemp[3] = L"";
+        wsprintf(strTemp, L"%2d", j == 0 ? 12 : j);
 		TextOut(hdc, cx + x - 10, cy + y - 10, strTemp, lstrlen(strTemp));
 	}
 }
 
 void CBS_Num2(HDC hdc, int cx, int cy, int length) {
-	for (int i = 0, j = 0; j < 360; i += 90, j += 3) {
+    for (int i = 0, j = 0; j < 360; i += 90, j += 3) {
 		float fTheta = RAD((float)((i - 135.f)));
 		int x = (int)(cos(fTheta) * length) - (sin(fTheta) * length);
 		int y = (int)(sin(fTheta) * length) + (cos(fTheta) * length);
 		TCHAR strTemp[3] = L"";
 		wsprintf(strTemp, L"%2d", j == 0 ? 12 : j);
 		TextOut(hdc, cx + x - 10, cy + y - 10, strTemp, lstrlen(strTemp));
-	}
+    }
 }
 
 void CBS_Num3(HDC hdc, int cx, int cy, int length) {

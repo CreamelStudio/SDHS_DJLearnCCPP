@@ -21,9 +21,11 @@ HBRUSH hYellowBrush;
 HBRUSH  hBlackBrush;
 HBRUSH  hWhiteBrush;
 
+MYCLOCK* g_pClock;
+
 int OnCreate(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
-    hRedPen =    CreatePen(PS_DOT, 1, RGB(255, 0, 0));
+    /*hRedPen = CreatePen(PS_DOT, 1, RGB(255, 0, 0));
     hGreenPen =  CreatePen(PS_DOT, 1, RGB(0, 255, 0));
     hBluePen =   CreatePen(PS_DOT, 1, RGB(0, 0, 255));
     hYellowPen = CreatePen(PS_DOT, 1, RGB(255, 255, 0));
@@ -35,15 +37,17 @@ int OnCreate(HWND hWnd, WPARAM wParam, LPARAM lParam)
     hBlueBrush =   CreateSolidBrush(RGB(0, 0, 255));
     hYellowBrush = CreateSolidBrush(RGB(255, 255, 0));
     hBlackBrush =  CreateSolidBrush(RGB(0, 0, 0));
-    hWhiteBrush =  CreateSolidBrush(RGB(255, 255, 255));
+    hWhiteBrush =  CreateSolidBrush(RGB(255, 255, 255));*/
 
     SetTimer(hWnd, 0, 1000, NULL);
+    g_pClock = StartMyClock(100, 100, 500, 500); //g_pClock 시계 객체생성
     return 0;
 }
 
 int OnTimer(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
     GetLocalTime(&gST);
+    SetTime(g_pClock, gST);
 
     TCHAR strTime[128];
     wsprintf(strTime, L"%02d : %02d : %02d", gST.wHour, gST.wMinute, gST.wSecond);
@@ -79,7 +83,7 @@ int OnPaint(HWND hWnd, WPARAM wParam, LPARAM lParam)
     HDC hdc = BeginPaint(hWnd, &ps);
 
     // TODO: 여기에 hdc를 사용하는 그리기 코드를 추가합니다...
-    int SecNeddleLength = 140;
+    /*int SecNeddleLength = 140;
     int MinuteNeddleLength = 140;
     int HourNeddleLength = 70;
 
@@ -111,7 +115,10 @@ int OnPaint(HWND hWnd, WPARAM wParam, LPARAM lParam)
     gdiLine(hdc, 100, 400, 400, 100);
 
     SelectObject(hdc, hOldBrush);
-    SelectObject(hdc, hOldPen);
+    SelectObject(hdc, hOldPen);*/
+
+    SetHDC(g_pClock, hdc);
+    Update(g_pClock);
 
     EndPaint(hWnd, &ps);
     return 0;
@@ -125,7 +132,7 @@ void gdiRotLineCW(HDC hdc, float x, float y, float lineLength, float theta) {
 
 int OnDestroy(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
-      DeleteObject(hBlackPen);
+      /*DeleteObject(hBlackPen);
       DeleteObject(hWhitePen);
       DeleteObject(hYellowPen);
       DeleteObject(hBluePen);
@@ -137,8 +144,9 @@ int OnDestroy(HWND hWnd, WPARAM wParam, LPARAM lParam)
       DeleteObject(hYellowBrush);
       DeleteObject(hBlueBrush);
       DeleteObject(hGreenBrush);
-      DeleteObject(hRedBrush);
+      DeleteObject(hRedBrush);*/
 
+	Release(g_pClock);
     PostQuitMessage(0);
     return 0;
 }
