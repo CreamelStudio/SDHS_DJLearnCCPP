@@ -34,7 +34,7 @@ MYCLOCK* StartMyClock(int x, int y, int w, int h) {
 }
 
 void Update(MYCLOCK* object) {
-	switch (object->iStyle) {
+	switch (object->iStyle & 0xF000) {
 		case CBS_RECT:
 			Rectangle(object->hdc, object->x, object->y, object->x + object->w, object->y + object->h);
 			break;
@@ -43,7 +43,7 @@ void Update(MYCLOCK* object) {
 			break;
 	}
 
-	switch (object->iStyle) {
+	switch (object->iStyle & 0x00FF) {
 		case CBS_NUM1:
 			CBS_Num1(object->hdc, object->pMin->x, object->pMin->y, object->pMin->length);
 			break;

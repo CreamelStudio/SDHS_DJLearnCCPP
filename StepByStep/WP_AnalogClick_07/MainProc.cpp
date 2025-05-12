@@ -61,6 +61,18 @@ int OnCommand(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
     int wmId = LOWORD(wParam);
     // 메뉴 선택을 구문 분석합니다:
+    static int clockStyle = NULL;
+    static int hourPenThick = 5;
+
+    static COLORREF myColor = RGB(0, 0, 0);
+    CHOOSECOLOR cc;
+    static COLORREF crTemp[16];
+    ZeroMemory(&cc, sizeof(cc));
+    cc.lStructSize = sizeof(cc);
+    cc.hwndOwner = hWnd;
+    cc.lpCustColors = crTemp;
+    cc.Flags = CC_FULLOPEN | CC_RGBINIT;
+
     switch (wmId)
     {
     case IDM_ABOUT:
@@ -69,9 +81,34 @@ int OnCommand(HWND hWnd, WPARAM wParam, LPARAM lParam)
     case IDM_EXIT:
         DestroyWindow(hWnd);
         break;
+    case IDM_CIRCLE:
+        clockStyle += CBS_CIRCLE;
+        break;
+    case IDM_SQUARE:
+        clockStyle += CBS_RECT;
+        break;
+    case IDM_NUM1:
+        clockStyle += CBS_NUM1;
+        break;
+    case IDM_NUM2:
+        clockStyle += CBS_NUM2;
+        break;
+    case IDM_NUM3:
+        clockStyle += CBS_NUM3;
+        break;
+    case IDM_HOUR_THICK:
+        if ((hourPenThick += 2;) >= 15) hourPenThick = 5;
+        g_pClock->pHour->color = (HPEN)CreatePen(PS_SOLID, hourPenThick, myColor);
+        break;
+    case IDM_HOUR_COLOR:
+        ChooseColor(&cc);
+        myColor = cc.rgbResult
+        g_pColor->pHour->color = (HPEN)CreatePen(PS_SOLID, hourPenThick, myColor);
+        break;
     default:
         return DefWindowProc(hWnd, WM_COMMAND, wParam, lParam);
     }
+    SetBK(g_pClock, clockStyle);
     return 0;
 }
 
