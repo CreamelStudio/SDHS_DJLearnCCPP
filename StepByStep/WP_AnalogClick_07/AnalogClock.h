@@ -26,4 +26,4 @@ inline void Set(MYCLOCK* object, SYSTEMTIME st) { object->st = st; };
 inline void SetTime(MYCLOCK* object, SYSTEMTIME st) { object->st = st; };
 inline void SetHDC(MYCLOCK* object, HDC hdc) { object->hdc = hdc; };
 inline void SetHDC(NEEDLE* object, HDC hdc) { object->hdc = hdc; };
-inline void SetBK(MYCLOCK* object, int istyle) {object->iStyle = istyle}
+inline void SetBK(MYCLOCK* object, int istyle) { object->iStyle = istyle; };
