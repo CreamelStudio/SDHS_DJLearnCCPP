@@ -6,17 +6,21 @@ extern INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 extern BOOL bIsActive;
 extern HDC ghdc;
 
+extern BOOL bIsLoopExit;
+
 extern int nFPS;
 extern int nCount;
 
 int OnCreate(HWND hWnd, WPARAM wParam, LPARAM lParam) {
     Start();
+    bIsLoopExit = TRUE;
     SetTimer(hWnd, 0, 1000, NULL);
     ghdc = GetDC(hWnd);
     bIsActive = TRUE;
     return 0;
 }
 int OnDestroy(HWND hWnd, WPARAM wParam, LPARAM lParam) {
+    bIsLoopExit = FALSE;
     ReleaseDC(hWnd, ghdc);
     KillTimer(hWnd, 0);
     PostQuitMessage(0);

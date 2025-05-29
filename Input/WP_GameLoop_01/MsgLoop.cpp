@@ -3,6 +3,7 @@
 
 extern HINSTANCE hInstance;
 extern BOOL bIsActive;
+extern BOOL bIsLoopExit;
 
 int WndMsgLoop(HINSTANCE hInstance) {
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_WPGAMELOOP01));
@@ -27,7 +28,7 @@ int GameMsgLoop(HINSTANCE hInstance) {
     MSG msg;
 
     // 게임 메시지 루프입니다:
-    while (1)
+    while (bIsLoopExit)
     {
         if (PeekMessage(&msg, nullptr, 0, 0, PM_NOREMOVE)) {
             if (GetMessage(&msg, nullptr, 0, 0))
