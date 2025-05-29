@@ -11,8 +11,9 @@
 #include "framework.h"
 
 #include "Resource.h"
+#include "GameManager.h"
 #include "MainProc.h"
 #include "AboutProc.h"
-#include "WP_GameLoop_01.h"
+#include "MsgLoop.h"
 
 #endif //PCH_H

@@ -19,6 +19,9 @@
     <Filter Include="MainProc">
       <UniqueIdentifier>{7fac0e6c-f0ae-476c-9627-6052908312a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MessageLoop">
+      <UniqueIdentifier>{1126b6a0-480e-41ec-bb89-b3bb9fc30a7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -42,6 +45,12 @@
     <ClInclude Include="MainProc.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="MsgLoop.h">
+      <Filter>MessageLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -54,6 +63,12 @@
       <Filter>Proc</Filter>
     </ClCompile>
     <ClCompile Include="MainProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgLoop.cpp">
+      <Filter>MessageLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
       <Filter>Proc</Filter>
     </ClCompile>
   </ItemGroup>
