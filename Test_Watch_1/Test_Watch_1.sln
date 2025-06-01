@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36121.58
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07.WP_AnalogClock_02", "WP_AnalogClick_07\WP_AnalogClick_07.vcxproj", "{5693B981-4B67-48B8-96C7-F42D9B104F01}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClockClockLarge", "ClockClockLarge\ClockClockLarge.vcxproj", "{E6838014-0389-4DCA-8742-AE48D62F492D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5693B981-4B67-48B8-96C7-F42D9B104F01}.Debug|x64.ActiveCfg = Debug|x64
-		{5693B981-4B67-48B8-96C7-F42D9B104F01}.Debug|x64.Build.0 = Debug|x64
-		{5693B981-4B67-48B8-96C7-F42D9B104F01}.Debug|x86.ActiveCfg = Debug|Win32
-		{5693B981-4B67-48B8-96C7-F42D9B104F01}.Debug|x86.Build.0 = Debug|Win32
-		{5693B981-4B67-48B8-96C7-F42D9B104F01}.Release|x64.ActiveCfg = Release|x64
-		{5693B981-4B67-48B8-96C7-F42D9B104F01}.Release|x64.Build.0 = Release|x64
-		{5693B981-4B67-48B8-96C7-F42D9B104F01}.Release|x86.ActiveCfg = Release|Win32
-		{5693B981-4B67-48B8-96C7-F42D9B104F01}.Release|x86.Build.0 = Release|Win32
+		{E6838014-0389-4DCA-8742-AE48D62F492D}.Debug|x64.ActiveCfg = Debug|x64
+		{E6838014-0389-4DCA-8742-AE48D62F492D}.Debug|x64.Build.0 = Debug|x64
+		{E6838014-0389-4DCA-8742-AE48D62F492D}.Debug|x86.ActiveCfg = Debug|Win32
+		{E6838014-0389-4DCA-8742-AE48D62F492D}.Debug|x86.Build.0 = Debug|Win32
+		{E6838014-0389-4DCA-8742-AE48D62F492D}.Release|x64.ActiveCfg = Release|x64
+		{E6838014-0389-4DCA-8742-AE48D62F492D}.Release|x64.Build.0 = Release|x64
+		{E6838014-0389-4DCA-8742-AE48D62F492D}.Release|x86.ActiveCfg = Release|Win32
+		{E6838014-0389-4DCA-8742-AE48D62F492D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
