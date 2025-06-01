@@ -137,6 +137,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AboutProc.h" />
+    <ClInclude Include="ClockWatch.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="gdiUtil.h" />
     <ClInclude Include="MainProc.h" />
@@ -147,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AboutProc.cpp" />
+    <ClCompile Include="ClockWatch.cpp" />
     <ClCompile Include="gdiUtil.cpp" />
     <ClCompile Include="MainProc.cpp" />
     <ClCompile Include="pch.cpp">

@@ -64,7 +64,7 @@ void CBS_Num3(HDC hdc, int cx, int cy, int length) {
 }
 
 void CBS_Needle1(HDC hdc, int cx, int cy, int length) {
-	for (int i = 0;i < 360;i += 30) {
+	for (int i = 0; i < 360; i += 30) {
 		float fTheta = RAD((float)((i - 135.f)));
 
 		int x1 = (int)((cos(fTheta) * length) - (sin(fTheta) * length));
@@ -77,7 +77,7 @@ void CBS_Needle1(HDC hdc, int cx, int cy, int length) {
 }
 
 void CBS_Needle2(HDC hdc, int cx, int cy, int length) {
-	for (int i = 0;i < 360;i += 6) {
+	for (int i = 0; i < 360; i += 6) {
 		float fTheta = RAD((float)((i - 135.f)));
 		int x1 = (int)((cos(fTheta) * length) - (sin(fTheta) * length));
 		int y1 = (int)(sin(fTheta) * length) + (cos(fTheta) * length);

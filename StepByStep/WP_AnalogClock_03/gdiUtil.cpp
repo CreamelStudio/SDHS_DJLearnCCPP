@@ -1,9 +1,6 @@
 #include "pch.h"
 #include "gdiUtil.h"
 
-#define PI 3.141592f
-#define RAD(x) PI/180.0f*(x)
-
 //==========================================
 // Desc : Windows GDI 선을 그리는 함수
 // Parameter : HDC, 시작점(x1, y1), 끝점(x2, y2)
@@ -28,61 +25,4 @@ void gdiStar(HDC hdc, int mx, int my, int scale)
     LineTo(hdc,     mx + 10 * scale,    my + -3 * scale);
     LineTo(hdc,     mx + -6 * scale,    my + 8 * scale);
     LineTo(hdc,     mx + 0 * scale,     my + -10 * scale);
-}
-
-void CBS_Num1(HDC hdc, int cx, int cy, int length) {
-	for (int i = 0, j = 0; i < 360; i += 30, j++) {
-        float fTheta = RAD((float)((i - 135.f)));
-		int x = (int)(cos(fTheta) * length) - (sin(fTheta) * length);
-		int y = (int)(sin(fTheta) * length) + (cos(fTheta) * length);
-        TCHAR strTemp[3] = L"";
-        wsprintf(strTemp, L"%2d", j == 0 ? 12 : j);
-		TextOut(hdc, cx + x - 10, cy + y - 10, strTemp, lstrlen(strTemp));
-	}
-}
-
-void CBS_Num2(HDC hdc, int cx, int cy, int length) {
-    for (int i = 0, j = 0; j < 360; i += 90, j += 3) {
-		float fTheta = RAD((float)((i - 135.f)));
-		int x = (int)(cos(fTheta) * length) - (sin(fTheta) * length);
-		int y = (int)(sin(fTheta) * length) + (cos(fTheta) * length);
-		TCHAR strTemp[3] = L"";
-		wsprintf(strTemp, L"%2d", j == 0 ? 12 : j);
-		TextOut(hdc, cx + x - 10, cy + y - 10, strTemp, lstrlen(strTemp));
-    }
-}
-
-void CBS_Num3(HDC hdc, int cx, int cy, int length) {
-	for (int i = 0, j = 0; j < 360; i += 6, j++) {
-		float fTheta = RAD((float)((i - 135.f)));
-		int x = (int)(cos(fTheta) * length) - (sin(fTheta) * length);
-		int y = (int)(sin(fTheta) * length) + (cos(fTheta) * length);
-		TCHAR strTemp[3] = L"";
-		wsprintf(strTemp, L"%2d", j);
-		TextOut(hdc, cx + x - 10, cy + y - 10, strTemp, lstrlen(strTemp));
-	}
-}
-
-void CBS_Needle1(HDC hdc, int cx, int cy, int length) {
-	for (int i = 0;i < 360;i += 30) {
-		float fTheta = RAD((float)((i - 135.f)));
-
-		int x1 = (int)((cos(fTheta) * length) - (sin(fTheta) * length));
-		int y1 = (int)(sin(fTheta) * length) + (cos(fTheta) * length);
-		int x2 = (int)((cos(fTheta) * (length - 10)) - (sin(fTheta) * (length - 10)));
-		int y2 = (int)((sin(fTheta) * (length - 10)) + (cos(fTheta) * (length - 10)));
-
-		gdiLine(hdc, cx + x1, cy + y1, cx + x2, cy + y2);
-	}
-}
-
-void CBS_Needle2(HDC hdc, int cx, int cy, int length) {
-	for (int i = 0;i < 360;i += 6) {
-		float fTheta = RAD((float)((i - 135.f)));
-		int x1 = (int)((cos(fTheta) * length) - (sin(fTheta) * length));
-		int y1 = (int)(sin(fTheta) * length) + (cos(fTheta) * length);
-		int x2 = (int)((cos(fTheta) * (length - 10)) - (sin(fTheta) * (length - 10)));
-		int y2 = (int)((sin(fTheta) * (length - 10)) + (cos(fTheta) * (length - 10)));
-		gdiLine(hdc, cx + x1, cy + y1, cx + x2, cy + y2);
-	}
 }
