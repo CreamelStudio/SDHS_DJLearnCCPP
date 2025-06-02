@@ -7,9 +7,12 @@ extern BOOL bIsActive;
 extern int nFPS;
 extern int nCount;
 extern HDC gHDC;
+extern HDC gHDC;
+extern HWND ghWnd;
 
 int OnCreate(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
+    ghWnd = hWnd;
     Start();
     SetTimer(hWnd, 0, 1000, NULL);
     gHDC = GetDC(hWnd);
