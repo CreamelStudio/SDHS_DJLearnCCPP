@@ -7,8 +7,9 @@ extern BOOL bIsActive;
 extern int nFPS;
 extern int nCount;
 extern HDC gHDC;
-extern HDC gHDC;
 extern HWND ghWnd;
+
+extern DINO* Dino;
 
 int OnCreate(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
@@ -60,14 +61,33 @@ int OnCommand(HWND hWnd, WPARAM wParam, LPARAM lParam)
 
 int OnTimer(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
-    nFPS = nCount;
-    nCount = 0;
+
+    if (wParam == 0) {
+        nFPS = nCount;
+        nCount = 0;
+    }
+
+    if (wParam == 100) {
+        if (getJump(Dino)) {
+            setJump(Dino, false);
+            KillTimer(hWnd, 100);
+        }
+    }
+
     return 0;
 }
 
 int OnKeyDown(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
-    setJump(Dino, true);
+    switch (wParam)
+    {
+    case VK_SPACE:
+        if(!getJump(Dino))setJump(Dino, true);
+        SetTimer(hWnd, 100, 10, NULL);
+        break;
+    default:
+        return DefWindowProc(hWnd, WM_KEYDOWN, wParam, lParam);
+    }
     return 0;
 }
 

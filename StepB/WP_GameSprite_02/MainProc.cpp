@@ -7,7 +7,6 @@ extern BOOL bIsActive;
 extern int nFPS;
 extern int nCount;
 extern HDC gHDC;
-extern HDC gHDC;
 extern HWND ghWnd;
 
 int OnCreate(HWND hWnd, WPARAM wParam, LPARAM lParam)
@@ -60,14 +59,10 @@ int OnCommand(HWND hWnd, WPARAM wParam, LPARAM lParam)
 
 int OnTimer(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
+
     nFPS = nCount;
     nCount = 0;
-    return 0;
-}
 
-int OnKeyDown(HWND hWnd, WPARAM wParam, LPARAM lParam)
-{
-    setJump(Dino, true);
     return 0;
 }
 
@@ -88,7 +83,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_CREATE: return OnCreate(hWnd, wParam, lParam);
     case WM_COMMAND:return OnCommand(hWnd, wParam, lParam);
     case WM_TIMER:  return OnTimer(hWnd, wParam, lParam);
-	case WM_KEYDOWN: return OnKeyDown(hWnd, wParam, lParam);
 //    case WM_PAINT:  return OnPaint(hWnd, wParam, lParam);
     case WM_DESTROY:return OnDestroy(hWnd, wParam, lParam);
     default:        return DefWindowProc(hWnd, message, wParam, lParam);
