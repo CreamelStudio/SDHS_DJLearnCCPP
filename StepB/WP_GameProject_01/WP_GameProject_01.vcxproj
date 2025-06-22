@@ -138,6 +138,7 @@
   <ItemGroup>
     <ClInclude Include="AboutProc.h" />
     <ClInclude Include="BackGround.h" />
+    <ClInclude Include="Cactus.h" />
     <ClInclude Include="Dino.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameManager.h" />
@@ -152,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="AboutProc.cpp" />
     <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="Cactus.cpp" />
     <ClCompile Include="Dino.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GlobalVariable.cpp" />
@@ -175,6 +177,13 @@
     <Image Include="bmp00002.bmp" />
     <Image Include="small.ico" />
     <Image Include="WP_GameProject_01.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wave1.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="mic_off_audio.wav" />
+    <Media Include="mic_on_audio.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

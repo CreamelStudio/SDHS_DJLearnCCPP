@@ -35,6 +35,8 @@ void Update(BACKGROUND* Obj)
 
 void Render(HDC hdc, BACKGROUND* Obj)
 {
+	PatBlt(hdc, 0, 0, 640, 480, WHITENESS);
+
 	BitBlt(hdc, Obj->x, Obj->y, Obj->w, Obj->h, 
 		   Obj->hImgDC, Obj->sx, Obj->sy, SRCCOPY);
 }

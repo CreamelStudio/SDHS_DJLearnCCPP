@@ -14,6 +14,7 @@
 #include "AboutProc.h"
 #include "BackGround.h"
 #include "Dino.h"
+#include "Cactus.h"
 #include "GameManager.h"
 #include "MainProc.h"
 #include "MsgLoop.h"
