@@ -18,13 +18,12 @@ int main()
 
     while (1) {
         Rect(-20 + cx, -10 + cy, 20 + cx, 10 + cy);
-        TwoPointLine(cx, cy, cx + 10, cy + -10);
-        /*for (int i = 0; i < 360; i += 1) {
+        for (int i = 0; i < 360; i += 1) {
             float theta = 180.0f / PI * (float)i;
             int x = ((float)cos(theta) - (float)sin(theta)) * 10;
-            int y = ((float)cos(theta) + (float)sin(theta)) * 10;
+            int y = ((float)cos(theta) + (float)sin(theta)) * 5;
             TwoPointLine(cx, cy, cx + x, cy + y);
-        }*/
+        }
 
         Sleep(1);
      }
