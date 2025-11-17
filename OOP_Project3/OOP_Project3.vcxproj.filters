@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="미리컴파일된헤더">
+      <UniqueIdentifier>{e22c9cb3-2664-48d1-bff8-acde9be1a28c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="프로시저">
+      <UniqueIdentifier>{de6f6386-07e6-4291-b270-cb8f6ad203d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="그래픽코드">
+      <UniqueIdentifier>{d52852cb-959a-4872-909f-c7dac20a8b30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="수학">
+      <UniqueIdentifier>{f3823a46-e40f-4cd6-a0f5-e485d24fd213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="메인시스템">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Gdi.h">
+      <Filter>그래픽코드</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProc.h">
+      <Filter>프로시저</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>수학</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseWindow.h">
+      <Filter>메인시스템</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>미리컴파일된헤더</Filter>
+    </ClInclude>
+    <ClInclude Include="OOP_Project3.h">
+      <Filter>메인시스템</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLoop.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OOP_Project3.cpp">
+      <Filter>메인시스템</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseWindow.cpp">
+      <Filter>메인시스템</Filter>
+    </ClCompile>
+    <ClCompile Include="Gdi.cpp">
+      <Filter>그래픽코드</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProc.cpp">
+      <Filter>프로시저</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>수학</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>미리컴파일된헤더</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLoop.cpp">
+      <Filter>메인시스템</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OOP_Project3.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="OOP_Project3.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
