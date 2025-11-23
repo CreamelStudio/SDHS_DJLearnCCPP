@@ -114,8 +114,8 @@ public:
 	void DrawDot(float x, float y, COLORREF color);
 
 	//void Line(Vector2D from, Vector2D to);
-	void LineInt(int x1, int y1, int x2, int y2);
-	void LineFloat(float x1, float y1, float x2, float y2);
+	void Line(int x1, int y1, int x2, int y2);
+	void Line(float x1, float y1, float x2, float y2);
 	//void PolyLine(const std::vector<Vector2D>& points);
 
 	//void Cross(Vector2D pos, int diameter);

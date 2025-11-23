@@ -14,6 +14,8 @@
 #include "OOP_Project3.h"
 #include "Gdi.h"
 #include "MainProc.h"
+#include "Matrix.h"
+#include "gdiUtil.h"
 #include "GameLoop.h"
 #include "BaseWindow.h"
 

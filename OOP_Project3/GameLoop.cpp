@@ -58,23 +58,20 @@ int GameLoop()
                 rtScreen.right, rtScreen.bottom,
                 NULL, 0, 0, BLACKNESS);
             gdi->StartDraw(MemoryDC);
-
-
-            gdi->DkGreenPen();
-
-            for (int i = ((rtScreen.right / 50) / -2) - 1; i < ((rtScreen.right / 50) / 2) + 1; i++) {
-				gdi->LineFloat(rtScreen.right / 2 + i * 50, rtScreen.top, rtScreen.right / 2 + i * 50, rtScreen.bottom);
-            }
-
-            for (int i = ((rtScreen.bottom / 50) / -2) - 1; i < ((rtScreen.bottom / 50) / 2) + 1; i++) {
-				gdi->LineFloat(rtScreen.left, rtScreen.bottom / 2 + i * 50, rtScreen.right, rtScreen.bottom / 2 + i * 50);
-            }
-
-            gdi->YellowPen();
-            gdi->LineFloat(rtScreen.right / 2, rtScreen.top, rtScreen.right / 2, rtScreen.bottom);
-            gdi->LineFloat(rtScreen.left, rtScreen.bottom / 2, rtScreen.right, rtScreen.bottom / 2);
-
             
+            VERTEX v1 = { 0, 0, 1 };
+            VERTEX sv1;  //최종화면 출력좌표
+            Matrix2D mat;
+            mat.Identity();
+            mat.Move(rtScreen.right / 2, rtScreen.bottom / 2);
+            
+            sv1 = Multiple(v1, mat);
+            DrawBigBigDot(sv1.x, sv1.y, RGB(200, 200, 0));
+
+            gdi->GrayPen();
+            gdi->Line((int)(rtScreen.right / 2 + 0.5) + 0, 0, (int)(rtScreen.right / 2 + 0.5), (int)(rtScreen.bottom + 0.5));
+            gdi->Line(0, (int)(rtScreen.bottom / 2 + 0.5),(int)(rtScreen.right + 0.5), (int)(rtScreen.bottom / 2 + 0.5));
+
             gdi->StopDraw(MemoryDC);
             BitBlt(ScreenDC,
                 rtScreen.left, rtScreen.top,

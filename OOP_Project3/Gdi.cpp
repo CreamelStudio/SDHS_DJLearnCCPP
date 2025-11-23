@@ -246,13 +246,13 @@ void CGdi::DrawDot(float x, float y, COLORREF color)
 //	LineTo( m_hdc, (int)to.x, (int)to.y );
 //}
 
-void CGdi::LineInt(int x1, int y1, int x2, int y2)
+void CGdi::Line(int x1, int y1, int x2, int y2)
 {
 	MoveToEx( m_hdc, x1, y1, NULL );
 	LineTo( m_hdc, x2, y2 );
 }
 
-void CGdi::LineFloat(float x1, float y1, float x2, float y2)
+void CGdi::Line(float x1, float y1, float x2, float y2)
 {
 	MoveToEx( m_hdc, (int)x1, (int)y1, NULL );
 	LineTo( m_hdc, (int)x2, (int)y2 );

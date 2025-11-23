@@ -139,7 +139,9 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameLoop.h" />
     <ClInclude Include="Gdi.h" />
+    <ClInclude Include="gdiUtil.h" />
     <ClInclude Include="MainProc.h" />
+    <ClInclude Include="Matrix.h" />
     <ClInclude Include="OOP_Project3.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
@@ -150,7 +152,9 @@
     <ClCompile Include="BaseWindow.cpp" />
     <ClCompile Include="GameLoop.cpp" />
     <ClCompile Include="Gdi.cpp" />
+    <ClCompile Include="gdiUtil.cpp" />
     <ClCompile Include="MainProc.cpp" />
+    <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="OOP_Project3.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

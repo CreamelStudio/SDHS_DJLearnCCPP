@@ -21,11 +21,11 @@ int OnCreate(HWND hWnd, WPARAM wParam, LPARAM lParam)
     return 0;
 }
 
-int OnReSize(HWND hWnd, WPARAM wParam, LPARAM lParam)
+int OnSize(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
     GetClientRect(hWnd, &rtScreen);
-    InvalidateRect(hWnd, NULL, TRUE);
-    ScreenDC = GetDC(hWnd);
+    DeleteObject(MemoryBM);
+    DeleteDC(MemoryDC);
     MemoryDC = CreateCompatibleDC(ScreenDC);
     MemoryBM = CreateCompatibleBitmap(ScreenDC, rtScreen.right, rtScreen.bottom);
     SelectObject(MemoryDC, MemoryBM);
@@ -81,8 +81,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     switch (message)
     {
     case WM_CREATE:     return OnCreate(hWnd, wParam, lParam);
+    case WM_SIZE:       return OnSize(hWnd, wParam, lParam);
     case WM_COMMAND:    return OnCommand(hWnd, wParam, lParam);
-    case WM_SIZE:       return OnReSize(hWnd, wParam, lParam);
     case WM_PAINT:      return OnPaint(hWnd, wParam, lParam);
     case WM_DESTROY:    return OnDestroy(hWnd, wParam, lParam);
     default:            return DefWindowProc(hWnd, message, wParam, lParam);
