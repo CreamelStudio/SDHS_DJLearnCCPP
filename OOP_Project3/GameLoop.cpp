@@ -33,7 +33,7 @@ int GameLoop()
 
     MSG msg;
 
-
+    Initialize();
     while (1)
     {
         if (PeekMessage(&msg, nullptr, 0, 0, PM_NOREMOVE))
@@ -53,33 +53,15 @@ int GameLoop()
         }
         else if (bIsGameActive)
         {
-            BitBlt(MemoryDC, 
-                rtScreen.left, rtScreen.top, 
-                rtScreen.right, rtScreen.bottom,
-                NULL, 0, 0, BLACKNESS);
-            gdi->StartDraw(MemoryDC);
             
-            VERTEX v1 = { 0, 0, 1 };
-            VERTEX sv1;  //최종화면 출력좌표
-            Matrix2D mat;
-            mat.Identity();
-            mat.Move(rtScreen.right / 2, rtScreen.bottom / 2);
+            Process();
+            PreRender();
+            Render();
+            PostRender();
             
-            sv1 = Multiple(v1, mat);
-            DrawBigBigDot(sv1.x, sv1.y, RGB(200, 200, 0));
-
-            gdi->GrayPen();
-            gdi->Line((int)(rtScreen.right / 2 + 0.5) + 0, 0, (int)(rtScreen.right / 2 + 0.5), (int)(rtScreen.bottom + 0.5));
-            gdi->Line(0, (int)(rtScreen.bottom / 2 + 0.5),(int)(rtScreen.right + 0.5), (int)(rtScreen.bottom / 2 + 0.5));
-
-            gdi->StopDraw(MemoryDC);
-            BitBlt(ScreenDC,
-                rtScreen.left, rtScreen.top,
-                rtScreen.right, rtScreen.bottom,
-                MemoryDC, 0, 0, SRCCOPY);
         }
         else WaitMessage();
     }
-
+    Release();
     return (int)msg.wParam;
 }

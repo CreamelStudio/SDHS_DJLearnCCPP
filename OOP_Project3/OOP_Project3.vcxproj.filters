@@ -25,6 +25,21 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="메인시스템\Model Object">
+      <UniqueIdentifier>{02a8f04a-a231-448f-9b57-103757bdec26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="메인시스템\Model Object\Tetra">
+      <UniqueIdentifier>{405c1355-37a6-4394-84aa-7cf6842b4e31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="메인시스템\Model Object\Hexahedron">
+      <UniqueIdentifier>{dae04648-f99b-4dee-b156-c474dfcd0bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="메인시스템\Model Object\Triangle2D">
+      <UniqueIdentifier>{23796509-4344-41f2-aed4-bb4f2e4d773d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="메인시스템\Model Object\Square2D">
+      <UniqueIdentifier>{6006bfbe-ca95-46c2-8117-94bbafb8322f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -54,14 +69,29 @@
     <ClInclude Include="Resource.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="GameLoop.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="gdiUtil.h">
       <Filter>그래픽코드</Filter>
     </ClInclude>
     <ClInclude Include="Matrix.h">
       <Filter>수학</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLoop.h">
+      <Filter>메인시스템</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRun.h">
+      <Filter>메인시스템</Filter>
+    </ClInclude>
+    <ClInclude Include="Tetra.h">
+      <Filter>메인시스템\Model Object\Tetra</Filter>
+    </ClInclude>
+    <ClInclude Include="Hexahedron.h">
+      <Filter>메인시스템\Model Object\Hexahedron</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle2D.h">
+      <Filter>메인시스템\Model Object\Triangle2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Square2D.h">
+      <Filter>메인시스템\Model Object\Square2D</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +121,21 @@
     </ClCompile>
     <ClCompile Include="Matrix.cpp">
       <Filter>수학</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRun.cpp">
+      <Filter>메인시스템</Filter>
+    </ClCompile>
+    <ClCompile Include="Tetra.cpp">
+      <Filter>메인시스템\Model Object\Tetra</Filter>
+    </ClCompile>
+    <ClCompile Include="Hexahedron.cpp">
+      <Filter>메인시스템\Model Object\Hexahedron</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle2D.cpp">
+      <Filter>메인시스템\Model Object\Triangle2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Square2D.cpp">
+      <Filter>메인시스템\Model Object\Square2D</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

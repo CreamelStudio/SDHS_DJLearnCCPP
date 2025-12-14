@@ -15,7 +15,12 @@
 #include "Gdi.h"
 #include "MainProc.h"
 #include "Matrix.h"
+#include "Triangle2D.h"
+#include "Square2D.h"
+#include "Tetra.h"
+#include "Hexahedron.h"
 #include "gdiUtil.h"
+#include "GameRun.h"
 #include "GameLoop.h"
 #include "BaseWindow.h"
 
